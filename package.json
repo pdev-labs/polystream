@@ -1,0 +1,31 @@
+{
+  "name": "polystream",
+  "version": "1.0.0",
+  "description": "Multi-Tab Video Stream Enabler. Bypass single-stream restrictions, auto-pausing, and 'streaming on another device' lockouts on Firefox and Chrome.",
+  "main": "inject.js",
+  "scripts": {
+    "test": "node test/verify-interception.js",
+    "lint": "node -c inject.js content.js background.js popup.js multi-tab-enabler.user.js"
+  },
+  "keywords": [
+    "video-stream",
+    "multi-tab",
+    "userscript",
+    "chrome-extension",
+    "firefox-addon",
+    "physicswallah",
+    "tampermonkey",
+    "violentmonkey",
+    "stream-enabler"
+  ],
+  "author": "pdev-labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pdev-labs/polystream.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pdev-labs/polystream/issues"
+  },
+  "homepage": "https://github.com/pdev-labs/polystream#readme"
+}
