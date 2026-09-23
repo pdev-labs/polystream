@@ -37,12 +37,16 @@ global.window.sessionStorage = {
 global.window.addEventListener = Window.prototype.addEventListener;
 global.window.postMessage = () => {};
 
-global.navigator = {
-  locks: {
-    request: (name, cb) => cb({ name })
+Object.defineProperty(globalThis, 'navigator', {
+  value: {
+    locks: {
+      request: (name, cb) => cb({ name })
+    },
+    userActivation: { isActive: false }
   },
-  userActivation: { isActive: false }
-};
+  configurable: true,
+  writable: true
+});
 
 let broadcastCreated = [];
 global.BroadcastChannel = function(name) {
