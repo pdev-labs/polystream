@@ -5,6 +5,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/pdev-labs/polystream/actions/workflows/test.yml"><img src="https://github.com/pdev-labs/polystream/actions/workflows/test.yml/badge.svg" alt="PolyStream CI"></a>
   <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT">
   <img src="https://img.shields.io/badge/Firefox-Supported-orange.svg" alt="Firefox">
   <img src="https://img.shields.io/badge/Chrome-Supported-green.svg" alt="Chrome">
